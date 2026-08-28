@@ -550,14 +550,6 @@ footer,
     border: 1px dashed #27ae60;
 }
 
-
-
-
-
-
-/* =========================================
-   Global Reset & Basic Setup
-   ========================================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -576,9 +568,7 @@ a {
     color: inherit;
 }
 
-/* =========================================
-   Header Styling
-   ========================================= */
+
 .appointment-header {
     background-color: #0056b3;
     color: #fff;
@@ -598,9 +588,7 @@ a {
     opacity: 0.9;
 }
 
-/* =========================================
-   Main Content & Fieldset Styling
-   ========================================= */
+
 .appointment-main {
     max-width: 800px;
     margin: 40px auto;
@@ -627,7 +615,7 @@ a {
     margin-bottom: 15px;
 }
 
-/* Labels */
+
 .appointment-main label {
     display: inline-block;
     font-weight: 600;
@@ -635,7 +623,7 @@ a {
     color: #444;
 }
 
-/* General Inputs */
+
 input[type="text"],
 input[type="date"],
 input[type="tel"],
@@ -657,14 +645,13 @@ input[type="email"]:focus {
     box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
 }
 
-/* Radio Buttons Styling */
 input[type="radio"] {
     margin-left: 8px;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-/* Buttons */
+
 button {
     padding: 12px 25px;
     font-size: 1.1rem;
@@ -699,7 +686,7 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Confirmation Message (Just below the form) */
+
 #book-confirmation {
     text-align: center;
     margin-top: 30px;
@@ -734,7 +721,7 @@ button:active {
     display: none; 
 }
 
-/* مسافات بين الأقسام */
+
 .emergency-main section {
     margin-bottom: 50px;
 }
@@ -786,7 +773,7 @@ button:active {
 .emergency-main section > ol:hover {
     transform: scale(1.02); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-
+}
 .emergency-main section > ul,
 .emergency-main section > ol {
     padding-left: 50px; 
