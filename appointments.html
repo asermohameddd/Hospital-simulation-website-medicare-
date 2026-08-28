@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Schedule an appointment with one of our experienced medical specialists. Please provide your information and preferred appointment details below.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointments of MediCare hospital</title>
+        <link rel="icon" href="img/logo-hospital.png">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="appointment-header">
+            <section id="appointment-head">
+                <h1>Book an appointment</h1>
+                <p>
+                    Schedule an appointment with one of our experienced medical specialists. Please provide your information and preferred appointment details below.
+                </p>
+            </section>
+        </header>
+        <main class="appointment-main">
+            <section id="appointment-information">
+                <fieldset>
+                        <legend><h2>Enter your informations</h2></legend>
+                        <form action="https://httpbin.org/post" method="post">
+                        <p>
+                            <label for="name">Full name: </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="on" required>
+                        </p>   
+                        <p>
+                            <label for="date-of-birth">Date of birth: </label>
+                            <input type="date" name="date-of-birth" id="date-of-birth" required>
+                        </p>
+                        <p>Gender: </p>
+                        <p>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" required>
+                        </p>
+                        <p>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone number: </label>
+                            <input type="tel" name="phone" id="phone" placeholder="ex: +201012345678" required autocomplete="on">
+                        </p>
+                        <p>
+                            <label for="mail">Email address: </label>
+                            <input type="email" name="mail" id="mail" placeholder="Example@gmail.com" required autocomplete="on">
+                        </p>
+                        <p>
+                            <label for="department-choose">Choose the department: </label>
+                            <input type="text" id="department-choose" name="department-name" required placeholder="ex: Cardiology, Neurology,....." list="choose-department-list">
+                            <datalist id="choose-department-list">
+                                <option value="Cardiology">
+                                <option value="Neurology">
+                                <option value="Pediatrics">
+                                <option value="Orthopedics">
+                                <option value="Dermatology">
+                                <option value="Dentistry">
+                                <option value="Ophthalmology">
+                                <option value="Ear, Nose and Throat">
+                                <option value="Urology">
+                                <option value="Obstetrics & Gynecology">
+                                <option value="Oncology">
+                                <option value="General surgery">
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="doctor-choose">Preferred doctor: </label>
+                            <input type="text" id="doctor-choose" name="doctor-name" required placeholder="ex: Dr.Ahmed hassan, Dr. Sara Mohamed,....." list="choose-doctor-list">
+                            <datalist id="choose-doctor-list">
+                                <option value="Dr. Ahmed Hassan">
+                                <option value="Dr. Sara Mohamed">
+                                <option value="Dr. Omar Ali">
+                                <option value="Dr. Mariam Adel">
+                                <option value="Dr. Youssef Ibrahim">
+                                <option value="Dr. Nour Ahmed">
+                                <option value="Dr. Karim Mostafa">
+                                <option value="Dr. Hala Mahmoud">
+                                <option value="Dr. Omar Yasser">
+                                <option value="Dr. Radwa Mohamed">
+                                <option value="Dr. Tarek Nabil">
+                                <option value="Dr. Reem Hassan">
+                                <option value="Dr. Adam Sherif">
+                                <option value="Dr. Farah Adel">
+                                <option value="Dr. Khaled Samir">
+                            </datalist>
+                        </p>
+                        <p>
+                            Preferred time: 
+                        </p>
+                        <p>
+                            <label for="time1">8:00 AM - 11:00 AM</label>
+                            <input type="radio" name="preferred-time" id="time1" required>
+                        </p>
+                        <p>
+                            <label for="time2">11:00 AM - 2:00 PM</label>
+                            <input type="radio" name="preferred-time" id="time2" required>
+                        </p>
+                        <p>
+                            <label for="time3">2:00 PM - 6:00PM</label>
+                            <input type="radio" name="preferred-time" id="time3" required>
+                        </p>
+                        <p>
+                            <label for="time4">6:00 PM - 10:PM</label>
+                            <input type="radio" name="preferred-time" id="time4" required>
+                        </p>
+                        <p>
+                            <label for="visit-reason">Reason of visit: </label>
+                            <input type="text" id="visit-reason" name="visit-reason" required placeholder="Describe the reason for your appointment">
+                        </p>
+                        <p>
+                            <button type="submit">Book appointment</button>
+                            <button type="reset">Reset</button>
+                        </p>
+                        </form>
+                </fieldset>
+            </section>
+            <section id="book-confirmation">
+                <h3>Thanks for your appointment.</h3>
+                <h4>
+                    Our team will review your request and contact you to confirm your appointment.   
+                </h4>
+            </section>
+        </main>
+        <footer class="appointment-footer">
+            <section id="final-paragraph">
+                <div class="final-paragraph-card">
+                    <h2>MediCare hospital</h2>
+                    <p>
+                        Providing compassionate and high-quality healthcare for our community.
+                    </p>
+                </div>   
+            </section>
+            <hr>
+            <section id="main-contact">
+                    <h2>Main contact information</h2>
+                    <div class="main-contact-card">
+                        <ul>
+                            <li>
+                                Address: <address>15 Ibn Taha street, cairo, Egypt</address>
+                            </li>
+                            <li>
+                                Phone: <a href="tel:+201015155151">+201015155151</a>
+                            </li>
+                            <li>
+                                Email: <a href="mailto:medicarehospital@gmail.com">medicarehospital@gmail.com</a>
+                            </li>
+                            <li>
+                                Emergency number: <a href="tel:19573">19573</a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+            <section id="opening-hours">
+                <h2>Opening hours</h2>
+                <ul>
+                    <li>
+                        Everyday: <time datetime="08:00">8:00am</time> - <time datetime="22:00">10:00pm</time>
+                    </li>
+                    <li>
+                        Emergency: 24/7
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section id="ending">
+                <h3><a href="index.html">Back home</a></h3>
+                <a href="#">Go up</a>
+                <p>&copy; 2026 MediCare Hospital. All Rights Reserved.</p>
+            </section>
+        </footer>
+    </body>
+</html>
